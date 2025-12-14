@@ -1,6 +1,9 @@
+import { BotMessageSquare } from "lucide-react";
 import Image from "next/image";
-import MenuSheet from "./menu-sheet";
 import Link from "next/link";
+
+import { Button } from "./ui/button";
+import MenuSheet from "./menu-sheet";
 
 const Header = () => {
   return (
@@ -8,7 +11,14 @@ const Header = () => {
       <Link href="/">
         <Image src="/logo.svg" alt="Aparatus" width={91} height={24} />
       </Link>
-      <MenuSheet />
+      <div className="flex items-center gap-2">
+        <Link href="/chat">
+          <Button variant="outline" size="icon">
+            <BotMessageSquare className="size-5" />
+          </Button>
+        </Link>
+        <MenuSheet />
+      </div>
     </header>
   );
 };

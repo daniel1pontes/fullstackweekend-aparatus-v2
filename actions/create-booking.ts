@@ -38,6 +38,7 @@ export const createBooking = protectedActionClient
       where: {
         barbershopId: service.barbershopId,
         date,
+        cancelledAt: null,
       },
     });
     if (existingBooking) {

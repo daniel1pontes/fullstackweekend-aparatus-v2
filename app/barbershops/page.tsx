@@ -1,4 +1,5 @@
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 import BarbershopItem from "@/components/barbershop-item";
 import { getBarbershopsByServiceName } from "@/data/barbershops";
 import {
@@ -38,6 +39,7 @@ const BarbershopsPage = async ({ searchParams }: BarbershopsPageProps) => {
           )}
         </PageSectionContent>
       </PageContainer>
+      <Footer />
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 import BookingItem from "@/components/booking-item";
 import { getUserBookings } from "@/data/bookings";
 import {
@@ -46,6 +47,7 @@ const BookingsPage = async () => {
           )}
         </PageSectionContent>
       </PageContainer>
+      <Footer />
     </div>
   );
 };

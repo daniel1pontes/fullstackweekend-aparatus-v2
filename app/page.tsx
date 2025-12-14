@@ -58,6 +58,7 @@ export default async function Home() {
           </PageSectionScroller>
         </PageSectionContent>
       </PageContainer>
+      <Footer />
     </div>
   );
 }

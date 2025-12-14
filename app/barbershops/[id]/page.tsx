@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Smartphone } from "lucide-react";
 import { getBarbershopById } from "@/data/barbershops";
 import { PageSectionTitle } from "@/components/ui/page";
+import Footer from "@/components/footer";
 import ServiceItem from "@/components/service-item";
 import BackButton from "./_components/back-button";
 import CopyButton from "./_components/copy-button";
@@ -98,6 +99,7 @@ const BarbershopPage = async ({ params }: PageProps<"/barbershops/[id]">) => {
         {/* Footer spacing */}
         <div className="pt-[60px]" />
       </div>
+      <Footer />
     </div>
   );
 };
